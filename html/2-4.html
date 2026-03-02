@@ -6,6 +6,54 @@
     <title>Document</title>
   </head>
   <body>
-    <form></form>
+    <form>
+      <div>
+        <label for="username">Username</label>
+        <input required type="text" placeholder="Username" />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input type="password" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Your email</label>
+        <input type="email" />
+      </div>
+      <br />
+      <div>
+        <label for="biodata">Your Bio</label>
+        <textarea cols="50" rows="10"></textarea>
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <select>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="color">Favorite Color: </label>
+        <input name="color" type="radio" value="red" />
+        <label for="red">Red</label>
+        <input name="color" type="radio" value="green" />
+        <label for="green">Green</label>
+      </div>
+      <br />
+      <div>
+        <label for="hobbies">Select hobbies</label>
+        <input name="hobbies" value="reading" type="checkbox" />
+        <label name="hobbies" for="reading">Reading</label>
+        <input name="hobbies" value="singing" type="checkbox" />
+        <label name="hobbies" for="singing">Singing</label>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="Register" />
+      </div>
+    </form>
   </body>
 </html>
