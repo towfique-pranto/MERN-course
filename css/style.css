@@ -1,14 +1,4 @@
 h1{
-  color: rgb(255, 0, 0);
-  font-size: 40px;
-}
-.sameBg{
-  background-color: green;
-}
-#btn{
-  color: white
-}
-
-body{
-  background-color: aliceblue;
+font-family: "Kode Mono", monospace;
+text-align: center;
 }
