@@ -7,5 +7,5 @@ export default function LoadUser() {
       .then((data) => console.log(data));
   }, []);
 
-  return <div>LoadUser</div>;
+  return <div className="text-rose-500 text-4xl">LoadUser</div>;
 }
