@@ -1,6 +1,7 @@
 import Bio from "./Bio";
 import Counter from "./Counter";
 import Image from "./Image";
+import LoadUser from "./LoadUser";
 import WorkSample from "./WorkSample";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
   ];
   return (
     <div>
+      <LoadUser />
       <Counter />
       {workData.map((work, index) => (
         <WorkSample key={index} work={work} />
