@@ -3,6 +3,7 @@ import Counter from "./Counter";
 import Image from "./Image";
 import LoadUser from "./LoadUser";
 import WorkSample from "./WorkSample";
+import "./App.css";
 
 function App() {
   const workData = [
