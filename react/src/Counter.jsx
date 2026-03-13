@@ -15,7 +15,9 @@ export default function Counter() {
   return (
     <div style={myStyle}>
       <h1>Counter {myData}</h1>
-      <button onClick={changeData}>update</button>
+      <button className="btn" onClick={changeData}>
+        update
+      </button>
     </div>
   );
 }

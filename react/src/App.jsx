@@ -1,39 +1,20 @@
-import Bio from "./Bio";
-import Counter from "./Counter";
-import Image from "./Image";
-import LoadUser from "./LoadUser";
-import WorkSample from "./WorkSample";
-import "./App.css";
+import { useEffect, useState } from "react";
+import User from "./User";
 
-function App() {
-  const workData = [
-    {
-      year: "2018-2022",
-      exp: "Bsc in CSE",
-      inst: "EWU",
-    },
-    {
-      year: "2023-2026",
-      exp: "Bsc in CSE",
-      inst: "UIU",
-    },
-    {
-      year: "2026-current",
-      exp: "Full Stack Developer",
-      inst: "Future tech",
-    },
-  ];
+export default function App() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/users")
+      .then((res) => res.json())
+      .then((data) => setUsers(data.users));
+  }, []);
+  console.log(users);
   return (
-    <div>
-      <LoadUser />
-      <Counter />
-      {workData.map((work, index) => (
-        <WorkSample key={index} work={work} />
+    <div className="flex gap-2 flex-wrap justify-center">
+      {users.map((user) => (
+        <User key={user.id} user={user} />
       ))}
-      <Image />
-      <Bio />
     </div>
   );
 }
-
-export default App;
