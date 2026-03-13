@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import User from "./User";
+import Navbar from "./Navbar";
 
 export default function App() {
   const [users, setUsers] = useState([]);
@@ -11,10 +12,13 @@ export default function App() {
   }, []);
   console.log(users);
   return (
-    <div className="flex gap-2 flex-wrap justify-center">
-      {users.map((user) => (
-        <User key={user.id} user={user} />
-      ))}
-    </div>
+    <>
+      <Navbar />
+      <div className="flex gap-2 flex-wrap justify-center">
+        {users.map((user) => (
+          <User key={user.id} user={user} />
+        ))}
+      </div>
+    </>
   );
 }
