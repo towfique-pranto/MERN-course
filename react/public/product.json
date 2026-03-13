@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "productName": "Wireless Mouse",
+    "price": 1200,
+    "quantity": 50
+  },
+  {
+    "id": 2,
+    "productName": "Mechanical Keyboard",
+    "price": 4500,
+    "quantity": 25
+  },
+  {
+    "id": 3,
+    "productName": "Gaming Monitor",
+    "price": 18000,
+    "quantity": 15
+  },
+  {
+    "id": 4,
+    "productName": "USB-C Hub",
+    "price": 2500,
+    "quantity": 40
+  },
+  {
+    "id": 5,
+    "productName": "External SSD 1TB",
+    "price": 9500,
+    "quantity": 20
+  },
+  {
+    "id": 6,
+    "productName": "Webcam 1080p",
+    "price": 3200,
+    "quantity": 30
+  },
+  {
+    "id": 7,
+    "productName": "Laptop Stand",
+    "price": 1500,
+    "quantity": 60
+  },
+  {
+    "id": 8,
+    "productName": "Bluetooth Speaker",
+    "price": 5000,
+    "quantity": 12
+  },
+  {
+    "id": 9,
+    "productName": "Smart Watch",
+    "price": 7500,
+    "quantity": 18
+  },
+  {
+    "id": 10,
+    "productName": "Power Bank 20000mAh",
+    "price": 2800,
+    "quantity": 35
+  }
+]
