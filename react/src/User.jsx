@@ -1,4 +1,7 @@
 export default function User({ user }) {
+  const clickHandler = (data) => {
+    console.log("clicked", data);
+  };
   return (
     <div className="card bg-base-100 w-96 shadow-sm">
       <figure>
@@ -10,7 +13,12 @@ export default function User({ user }) {
         </h2>
         <p>Email: {user.email}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">Select</button>
+          <button
+            onClick={() => clickHandler(user.lastName)}
+            className="btn btn-primary"
+          >
+            Select
+          </button>
         </div>
       </div>
     </div>
