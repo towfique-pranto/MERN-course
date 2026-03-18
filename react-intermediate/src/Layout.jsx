@@ -7,7 +7,12 @@ export default function Layout() {
         <NavLink style={{ marginRight: "10px" }} to="/">
           Home
         </NavLink>
-        <NavLink to="/user/1">User Details</NavLink>
+        <NavLink style={{ marginRight: "10px" }} to="/user/1">
+          User Details
+        </NavLink>
+        <NavLink style={{ marginRight: "10px" }} to="/grandparent">
+          Grandparent
+        </NavLink>
       </nav>
 
       <main style={{ padding: "20px" }}>

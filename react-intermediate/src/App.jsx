@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router";
 import ErrorPage from "./ErrorPage";
 import Layout from "./Layout";
 import User from "./User";
+import Grandparent from "./Grandparent";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Route path="/" element={<Layout />}>
         <Route index element={<BasicExample />} />
         <Route path="/user/:id" element={<User />} />
+        <Route path="/grandparent" element={<Grandparent />} />
       </Route>
       <Route path="*" element={<ErrorPage />} />
     </Routes>
