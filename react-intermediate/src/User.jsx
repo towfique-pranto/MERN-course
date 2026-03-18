@@ -1,5 +1,7 @@
 import React from "react";
+import { useParams } from "react-router";
 
 export default function User() {
-  return <div>I am a User and my ID is 123</div>;
+  const { id } = useParams();
+  return <div>I am a User and my ID is {id}</div>;
 }
