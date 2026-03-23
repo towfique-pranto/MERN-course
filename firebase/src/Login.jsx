@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { signInUser } from "./firebase/firebase.config";
+import { signInUser, signInWithGoogle } from "./firebase/firebase.config";
 
 function Login() {
   const [user, setUser] = useState({
@@ -24,33 +24,42 @@ function Login() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-        <legend className="fieldset-legend">Login</legend>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+          <legend className="fieldset-legend">Login</legend>
 
-        <label className="label">Email</label>
-        <input
-          name="email"
-          type="email"
-          className="input"
-          value={user.email}
-          onChange={handleChange}
-        />
+          <label className="label">Email</label>
+          <input
+            name="email"
+            type="email"
+            className="input"
+            value={user.email}
+            onChange={handleChange}
+          />
 
-        <label className="label">Password</label>
-        <input
-          name="password"
-          type="password"
-          className="input"
-          value={user.password}
-          onChange={handleChange}
-        />
+          <label className="label">Password</label>
+          <input
+            name="password"
+            type="password"
+            className="input"
+            value={user.password}
+            onChange={handleChange}
+          />
 
-        <button type="submit" className="btn btn-neutral mt-4">
-          Login
-        </button>
-      </fieldset>
-    </form>
+          <button type="submit" className="btn btn-neutral mt-4">
+            Login
+          </button>
+          <button
+            type="button"
+            onClick={signInWithGoogle}
+            className="btn btn-success mt-4"
+          >
+            Login with Google
+          </button>
+        </fieldset>
+      </form>
+    </div>
   );
 }
 
