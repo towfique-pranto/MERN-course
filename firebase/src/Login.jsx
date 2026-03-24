@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { signInUser, signInWithGoogle } from "./firebase/firebase.config";
+import { toast } from "react-toastify";
 
 function Login() {
   const [user, setUser] = useState({
@@ -20,7 +21,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await signInUser(user.email, user.password);
-    console.log("Submitted:", user);
+    toast.success("Login successful!");
   };
 
   return (
