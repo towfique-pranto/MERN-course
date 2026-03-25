@@ -26,7 +26,7 @@ function Register() {
   return (
     <form onSubmit={handleSubmit}>
       <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
-        <legend className="fieldset-legend">Signup</legend>
+        <legend className="fieldset-legend">Register</legend>
 
         <label className="label">Email</label>
         <input
