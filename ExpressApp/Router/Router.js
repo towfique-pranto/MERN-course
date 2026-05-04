@@ -3,6 +3,6 @@ const getUser = require('../Controller/getUser');
 const router = express.Router();
 
 //GET RERQUEST
-router.get("/", getUser)
+router.get("/getuser", getUser)
 
 module.exports = router;
