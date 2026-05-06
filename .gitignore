@@ -28,3 +28,4 @@ postman/collections/New Collection/addUser.request.yaml
 postman/collections/New Collection/getUser.request.yaml
 postman/collections/New Collection/.resources/definition.yaml
 postman/globals/workspace.globals.yaml
+.postman/
