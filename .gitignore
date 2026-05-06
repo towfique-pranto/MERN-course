@@ -29,3 +29,6 @@ postman/collections/New Collection/getUser.request.yaml
 postman/collections/New Collection/.resources/definition.yaml
 postman/globals/workspace.globals.yaml
 .postman/
+postman/collections/GP MERN/addUser.request.yaml
+postman/collections/GP MERN/getUser.request.yaml
+postman/collections/GP MERN/.resources/definition.yaml
